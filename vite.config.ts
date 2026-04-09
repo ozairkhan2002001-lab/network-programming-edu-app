@@ -22,3 +22,8 @@ export default defineConfig(({mode}) => {
     },
   };
 });
+import { pwaConfig } from './vite-pwa-config'
+
+export default defineConfig({
+  plugins: [react(), pwaConfig],  // Add pwaConfig here
+})
